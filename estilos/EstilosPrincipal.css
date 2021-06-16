@@ -1,0 +1,462 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    overflow-x: hidden;
+}
+
+/*Estilos para el spinner*/
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.625rem 0 0 -1.875rem;  
+	text-align: center;
+  overflow: hidden;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #00bfd8;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0); }
+	40% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+/*Hasta aqui los estilos para el spinner*/
+
+.seccion-general .div-rojo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imagenesPrincipal/FondoLobo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-general .div-rojo img{
+    width: 80%;
+    height: 80%;
+}
+
+.seccion-general .div-azul{
+  height: 100vh;
+  background-color: #04334B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion-general .div-azul .div-titulo .p-tics{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Russo One', sans-serif; 
+  font-size: 36px;
+}
+
+.seccion-general .div-azul .p-conoce{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  color: #fff;
+  font: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+/*Desde aqui*/
+.content {
+  width: auto;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: 'Russo One', sans-serif; 
+  color: #fff;
+  height: 40px;
+  overflow: hidden;
+}
+.content:before {
+  position: absolute; 
+  left: -30px;
+  line-height: 40px;
+}
+.content:after {
+  position: absolute;
+  right: -30px;
+  line-height: 40px;
+}
+.content:after,
+.content:before {
+  animation: 2s linear 0s normal none infinite opacity;
+  -webkit-animation: 2s ease-out 0s normal none infinite opacity;
+  -moz-animation: 2s ease-out 0s normal none infinite opacity;
+  -o-animation: 2s ease-out 0s normal none infinite opacity;
+}
+.visible {
+  float: left;
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+}
+p {
+  display: inline;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+}
+ul {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  animation: 6s linear 0s normal none infinite change;
+  -webkit-animation: 6s linear 0s normal none infinite change;
+  -moz-animation: 6s linear 0s normal none infinite change;
+  -o-animation: 6s linear 0s normal none infinite change;
+  overflow: hidden;
+}
+ul li {
+  line-height: 40px;
+  margin: 0;
+  overflow: hidden;
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes change {
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -80px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  75% {
+    margin-top: -40px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes change {
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -80px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  75% {
+    margin-top: -40px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+/* Hasta aqui son los estilos para la animacion del titulo*/
+
+.seccion-general .div-azul .div-botones{
+  width: 100%;
+  text-align: center;
+}
+
+.seccion-general .div-azul .div-botones button a{
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  color: #fff;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+.seccion-general .div-azul .div-botones button img{
+  width: 45px;
+  height: 45px;
+}
+
+/*Desde aqui */
+.seccion-general .div-azul .div-botones button{
+  background: none;
+  border: 2px solid #f34751;
+  border-radius: 50px;
+  width: 28%;
+  margin-top: 5%;
+  margin-left: 4%;
+  margin-right: 4%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.seccion-general .div-azul .div-botones button::after{
+  content: "";
+  background: #f34751;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0, 0);
+  transition: all 0.4s ease;
+}
+
+.seccion-general .div-azul .div-botones button:hover:after{
+  transition: all 0.6s ease-out;
+  transform: scale(1, 1);
+}
+/*Hasta aqui son los estilos para el hover de los botones*/
+
+.seccion-general .div-azul .div-btn{
+  width: 59%;
+  height: 95%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.seccion-general .div-azul .div-btn .btn-registro{
+  width: 70%;
+  height: 50px;
+  border-radius: 100px;
+  color: #fff;
+  margin: 20px;
+  text-align: center; 
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  border-color: #f34751;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #f34751 inset, 0 0 0 0 #f34751;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.seccion-general .div-azul .div-btn .btn-registro:hover {
+  box-shadow: 0 0 10px 0 #f34751 inset, 0 0 10px 4px #f34751;
+  background: none;
+}
+
+
+@media (max-width: 940px) {
+  .seccion-general .div-azul .div-btn{
+    width: 100%;
+  }
+
+  .seccion-general .div-azul .div-btn .btn-registro{
+    width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    font-size: 30px;
+  }
+
+  .seccion-general .div-azul .div-titulo .p-tics{
+    font-size: 30px;
+  }
+
+  .seccion-general .div-azul .div-botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .seccion-general .div-azul .div-botones button{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+  }
+
+  .seccion-general .div-azul .div-botones button img{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    font-size: 25px;
+  }
+
+  .seccion-general .div-azul .div-titulo .p-tics{
+    font-size: 25px;
+  }
+
+  .seccion-general .div-azul .div-botones button{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  .seccion-general .div-azul .div-botones button img{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .content {
+    font-size: 20px;
+  }
+
+  .seccion-general .div-azul .div-titulo .p-tics{
+    font-size: 20px;
+  }
+
+  .seccion-general .div-azul .div-botones button{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  .seccion-general .div-azul .div-botones button img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .seccion-general .div-azul .div-btn .btn-registro{
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 360px) {
+  .content {
+    font-size: 20px;
+    margin-left: 2%;
+    margin-right: 5%;
+    width: 100%;
+  }
+
+  ul li {
+    margin-left: -10%;
+  }
+
+  .seccion-general .div-azul .div-titulo .p-tics{
+    font-size: 20px;
+  }
+
+  .seccion-general .div-azul .div-botones button{
+    margin-bottom: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    height: 45px;
+  }
+
+  .seccion-general .div-azul .div-botones button img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .content, .p-tics {
+    font-size: 19px;
+  }
+
+  ul li {
+    margin-left: -10%;
+  }
+}
